@@ -1,0 +1,453 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(196, 195, 195);
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 100%; /*16 px (12pt) default size. 1 em is a 100% of a default size*/
+}
+
+h1{
+    font-size: 2.25em; /*36px / 16px = 225% = 2.25em*/
+    font-weight: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+p{
+    line-height: 1.2;
+
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    display:flex;
+    flex-wrap: wrap;
+}
+
+body.about .container {
+    background-color: rgb(54, 54, 54);
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(50%);
+}
+
+.heroText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heroText h1 {
+    font-size: 4em;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.heroCaptions {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    color: #ffffff;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100px;  
+    height: 55px;
+    display: block;
+    
+}
+
+
+
+.me {
+    background-color: rgb(0, 0, 0);
+    flex: 1 1 70%;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.me .meImage {
+    background-color: transparent;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px 0 20px 0;
+
+}
+
+aside {
+    background-color: rgb(54, 54, 54);
+    flex: 1 0 30%;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+nav {
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+list-style: none;
+width: 100%;;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a:link, nav a:visited {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    /*width: 150px;*/
+    padding: 5px 10px;
+    display: block;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+nav a:hover, nav a:active{
+    background-color: rgb(21, 0, 255);
+}
+
+.imageRow {
+    width: 100%;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageCaption {
+    width: 30%;
+    text-align: center;
+}
+
+.imageCaption img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+.imageLabel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(54, 54, 54);
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 16px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.imageLabel:hover {
+ background:  rgb(21, 0, 255);
+ color: #ffffff;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 50px;
+    display: block;
+}
+
+.contactTitle{
+    font-size: 4em;
+    margin-bottom: 70px;
+    color: #000000;
+}
+
+.contactCaption {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.inputSection{
+    max-width: 500px;
+}
+
+.inputForm {
+    margin-bottom: 30px;
+}
+
+.inputForm label {
+    font-size: 0.9em;
+    display: block;
+    color: #000000;
+}
+
+.inputForm input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    font-size: 1em; 
+}
+
+.submitBox {
+    margin-top: 30px;
+}
+
+.submitButton {
+    font-size: 1em;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.submitButton:hover {
+    background:  rgb(21, 0, 255);
+    color: #ffffff;
+}
+
+footer {
+    background-color:  rgb(21, 0, 255);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*tablet*/
+@media screen and (max-width:800px) {
+
+    nav ul {
+       justify-content: space-between;
+        align-items: center;     
+    }
+
+    nav a {
+        padding: 6px 12px;
+        margin-right: 0;
+        font-size: 1em;
+    }
+
+    .heroText h1 {
+        font-size: 3em;
+    }
+    .heroCaptions {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .me {
+        flex: 1 1 70%;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+   aside {
+    flex: 1 0 30%;
+    padding-top: 20px;
+    padding-left: 15px;
+    }
+
+    nav a:link, nav a:visited {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    }
+
+    .imageCaption img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .contactForm {
+        padding: 30px;
+    }
+
+    .contactTitle {
+        font-size: 3em;
+    }
+
+}
+
+
+/*phone*/
+@media screen and (max-width:600px) {
+
+    nav ul {
+       flex-direction: column;
+       display: flex;
+       width: 100%;
+       padding: 0; 
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 5px 10px;
+        margin-right: 0;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .heroText h1 {
+        font-size: 2em;
+    }
+
+    .heroCaptions {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    body.about {
+    background-color: rgb(54, 54, 54);
+    }
+
+    body.about .container {
+    background-color: rgb(54, 54, 54);
+    max-width: 100%;
+    margin: 0;
+    }
+
+    .me,
+    aside {
+        width: 100%;
+        flex: none;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    aside {
+        margin-bottom: 20px;
+    }
+
+    .me .meImage {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+
+    .imageRow {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        width: 100%;
+    }
+
+    .imageCaption {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imageCaption img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imageLabel {
+        margin-bottom: 20px;
+    }
+
+    .contactForm {
+        padding: 20px;
+    }
+
+    .contactTitle {
+        font-size: 2em;
+        margin-bottom: 45px;
+        text-align: left;
+    }
+
+    .contactCaption {
+        font-size: 1em;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .inputSection {
+        width: 100%;
+    }
+
+    .submitButton {
+        width: 100%;
+        padding: 20px 0;
+        margin-left: 0;
+        font-size: 1em;
+    }
+}
